@@ -1,12 +1,12 @@
-import { useState } from "react";
 import { motion } from "motion/react";
+import { useState } from "react";
 import { useInView } from "./hooks/useInView";
 
 // Swiper imports
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // AIVideoGenerator has no images listed
 import AIVideoGenerator1 from "../../assets/projects/AIVideoGenerator/AIVideoGenerator1.png";
@@ -75,6 +75,11 @@ import UGCSchool1 from "../../assets/projects/UGCSchool/UGCSchool1.png";
 import UGCSchool2 from "../../assets/projects/UGCSchool/UGCSchool2.png";
 import UGCSchool3 from "../../assets/projects/UGCSchool/UGCSchool3.png";
 
+// MamnunAgency
+import MamnunAgency1 from "../../assets/projects/MamnunAgency/image1.png";
+import MamnunAgency2 from "../../assets/projects/MamnunAgency/image2.png";
+import MamnunAgency3 from "../../assets/projects/MamnunAgency/image3.png";
+
 export function Projects() {
   const [ref, isInView] = useInView({ threshold: 0.1 });
   const [showAll, setShowAll] = useState(false);
@@ -117,10 +122,17 @@ export function Projects() {
       ],
     },
     {
+      title: "Mamnun Agency Site",
+      description:
+        "An informational website for a traveling agency featuring comprehensive travel details, engaging destination galleries, and a contact form for inquiries.",
+      tags: ["Next.js", "React", "Tailwind CSS", "MongoDB"],
+      images: [MamnunAgency1, MamnunAgency2, MamnunAgency3],
+    },
+    {
       title: "Jewelry Design & Order Website",
       description:
         "E-commerce for custom jewelry design, with live editing, instant quoting, and order management dashboard.",
-      tags: ["Next.js", "TypeScript", "Stripe", "Vercel"],
+      tags: ["React", "Redux.js", "SCSS"],
       images: [
         JewelryDesignOrderWebsite1,
         JewelryDesignOrderWebsite2,
@@ -131,7 +143,7 @@ export function Projects() {
       title: "Job Agency Portal",
       description:
         "Job board and HR management portal connecting employers and job seekers, with messaging, filters, and admin CRM.",
-      tags: ["React", "Node.js", "MongoDB", "Socket.io"],
+      tags: ["Next.js", "TypeScript", "Vercel"],
       images: [JobAgency1, JobAgency2, JobAgency3],
     },
     {
@@ -145,7 +157,7 @@ export function Projects() {
       title: "Model Agency Website",
       description:
         "Responsive catalog and promotional site for a modeling agency, with management backoffice and photo galleries.",
-      tags: ["React", "MUI", "Express.js", "MongoDB"],
+      tags: ["React", "Tailwind.css", "Express.js", "MongoDB"],
       images: [ModelAgency1, ModelAgency2, ModelAgency3],
     },
     {
@@ -159,7 +171,7 @@ export function Projects() {
       title: "Smart Crypto Arbitrage",
       description:
         "Cross-exchange crypto arbitrage trading bot and analytics UI, featuring event-driven alerts and trade simulation.",
-      tags: ["React", "Node.js", "WebSockets", "TradingView"],
+      tags: ["React", "Node.js", "WebSockets", "THREE.js"],
       images: [
         SmartCryptoArbitrage1,
         SmartCryptoArbitrage2,
@@ -170,7 +182,7 @@ export function Projects() {
       title: "Smart Parking App",
       description:
         "IoT-enabled smart parking app for real-time spot discovery, reservations, and payment integration.",
-      tags: ["React Native", "TypeScript", "Firebase", "IoT"],
+      tags: ["React.js", "TypeScript", "Node.js", "Express", "MySQL"],
       images: [SmartParkingApp1, SmartParkingApp2, SmartParkingApp3],
     },
     {
