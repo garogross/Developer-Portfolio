@@ -122,7 +122,7 @@ export function Projects() {
       ],
     },
     {
-      title: "Mamnun Agency Site",
+      title: "MAMNUN Agency Website",
       description:
         "An informational website for a traveling agency featuring comprehensive travel details, engaging destination galleries, and a contact form for inquiries.",
       tags: ["Next.js", "React", "Tailwind CSS", "MongoDB"],
